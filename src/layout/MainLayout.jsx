@@ -1,16 +1,19 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/common/Navbar";
+import Footer from "../components/common/Footer";
 
 function MainLayout() {
   return (
     <>
-      {/* Navbar هيضيفها Person 3 */}
+      <Navbar />
+
       <main className="min-h-screen">
         <Outlet />
       </main>
 
-      {/* Footer هيضيفها Person 3 */}
+      <Footer />
     </>
   );
 }
 
-export default MainLayout; 
+export default MainLayout;
