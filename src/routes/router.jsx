@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       {
         path: "favorites",
         element: (
-            <ProtectedRoute isAuthenticated={false}>
+            <ProtectedRoute>
             <Favorites />
             </ProtectedRoute>
         ),
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
       {
     path: "profile",
     element: (
-        <ProtectedRoute isAuthenticated={false}>
+        <ProtectedRoute>
             <Profile />
         </ProtectedRoute>
     )
