@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import MainLayout from "../layout/MainLayout";
-import AuthLayout from "../layout/AuthLayout";
+import MainLayout from "../components/layout/MainLayout";
+import AuthLayout from "../components/layout/AuthLayout";
 
 import Home from "../pages/Home";
 import Movies from "../pages/Movies";
@@ -14,7 +14,7 @@ import Register from "../pages/Register";
 import NotFound from "../pages/NotFound";
 import ProtectedRoute from "../components/common/ProtectedRoute";
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
