@@ -8,7 +8,9 @@ const useFavoritesStore = create(
 
       addFavorite: (movie) =>
         set((state) => ({
-          favorites: [...state.favorites, movie],
+          favorites: state.favorites.some((favorite) => favorite.id === movie.id)
+            ? state.favorites
+            : [...state.favorites, movie],
         })),
 
       removeFavorite: (id) =>
