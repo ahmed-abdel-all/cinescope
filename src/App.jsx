@@ -1,5 +1,5 @@
 function App() {
-  return <h1>CineScope</h1>;
+  return null;
 }
 
 export default App;
